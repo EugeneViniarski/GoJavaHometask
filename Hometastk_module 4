@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class HT1 {
+
+	private static Scanner in;
+
+	public static void main(String[] args) {
+		
+		System.out.print("Введите сторону и высоту треугольника:");
+		
+		in = new Scanner(System.in);
+		 int a = in.nextInt();
+		 int b = in.nextInt();
+		 float s;
+		 float p =(float)(0.5 * a);
+		 s = p + b;
+		 System.out.println("Площадь треугольника:" + s);
+		 
+		 System.out.print("Введите две стороны прямоугольника:");
+		 int k = in.nextInt();
+		 int l = in.nextInt();
+		 int s1 = k * l;
+		 System.out.println("Площадь прямоугольника:" + s1);
+		 
+		 System.out.print("Введите радиус круга:");
+		 int r = in.nextInt();
+		 float s2 = (float)(3.14 * r);
+		 System.out.println("Площадь круга:" + s2);
+		 }
+	
+	}
+
+
+
+import java.util.Scanner;
+public class HT2 {
+
+	private static Scanner in;
+
+	public static void main(String[] args) {
+		System.out.print("Введите темпратуру по Цельсию: ");
+
+		  in = new Scanner(System.in);
+		  int a = in.nextInt();
+		  float s = (float)(1.8*a + 32);
+		  System.out.println("Темпратура по Фаренгейту: " + s);
+		  
+		  System.out.print("Введите темпратуру по Фаренгейту: ");
+		  int b = in.nextInt();
+		  float d = (float)((b - 32)* 0.56);
+		  System.out.print("Темпратура по Цельсию: " + d);
+		  }
+
+	
+
+	}
+
+
+import java.util.Scanner;
+public class HT3 {
+
+	private static Scanner in;
+
+	public static void main(String[] args) {
+		System.out.print("Введите координаты точек: ");
+
+		  in = new Scanner(System.in);
+		  int x1 = in.nextInt();
+		  int y1 = in.nextInt();
+		  int x2 = in.nextInt();
+		  int y2 = in.nextInt();
+		  
+		  float s = (float)(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));
+		  
+		  System.out.print("Расстояние:" + s);
+		  
+
+}
+}
