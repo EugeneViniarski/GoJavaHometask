@@ -1,0 +1,74 @@
+public class HomeTaskModule3 {
+    public static void main(String[] args) {
+        class file {
+            int size;
+            show_info();
+            save_info();
+        }
+        class text_file extends file {}
+        class audio_file extends file {}
+        class image_file extends file {}
+        class directory {
+            int size;
+            save_files();
+            show_files();
+            text_file k = new text_file();
+            audio_file n = new audio_file();
+            image_file p = new image_file();
+        }
+    }
+}
+
+
+
+
+
+
+public class Flowers {
+    public static void main(String[] args) {
+        class Flower{
+            String color;
+            String size;
+            smell();
+        }
+        class rose extends Flower{}
+        class tulip extends Flower{}
+        class chamomile extends Flower{}
+        class rosebush extends Flower{}
+        class aster extends Flower{}
+        class bouquet {
+            int flowers_amount;
+            smell();
+            rose Red = new rose();
+            tulip yellow = new tulip();
+            chamomile white = new chamomile();
+            rosebush rose = new rosebush();
+            aster violet = new aster();
+        }
+    }
+}
+
+
+
+
+public class Music_instruments {
+    public static void main(String[] args) {
+        class musical_instrument {
+            String material;
+            String color;
+            play_music();
+        }
+        class guiltar extends musical_instrument{};
+        class piano extends musical_instrument{};
+        class tube extends musical_instrument{};
+        class music_shop {
+            String adress;
+            String size;
+            sell_instruments();
+            buy_instruments();
+            guiltar electro = new guiltar();
+            piano royale = new piano();
+            tube big = new tube();
+        }
+    }
+}
