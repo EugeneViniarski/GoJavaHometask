@@ -38,3 +38,21 @@ public class Bouquet {
         }
     }
 }
+
+
+
+
+
+
+
+public class NegativeAmount extends Exception {
+    private int amountValue;
+
+    public NegativeAmount(int amountValue){
+        this.amountValue = amountValue;
+    }
+
+    public int getAmountValue(){
+        return amountValue;
+    };
+}
