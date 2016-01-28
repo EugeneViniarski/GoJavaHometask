@@ -1,41 +1,48 @@
-
 import java.util.Scanner;
 public class Bouquet {
     public static void main(String[] args) {
-        class Flower {
-            String color;
-            String size;
-        }
-        class rose extends Flower {
-        }
-        class tulip extends Flower {
-        }
-        class chamomile extends Flower {
-        }
-        class rosebush extends Flower {
-        }
-        class aster extends Flower {
-        }
-        class bouquet {
-            rose Red = new rose();
-            tulip yellow = new tulip();
-            chamomile white = new chamomile();
-            rosebush rose = new rosebush();
-            aster violet = new aster();
-            System.out.println("Enter bouquet amount:");
-            Scanner scanner = new Scanner(System.in);
-            String amountInput = scanner.next();
-            try{{int flowers_amount = Integer.parseInt(amountInput);
-                System.out.println("Flowers amount" + flowers_amount);
-                if (flowers_amount < 0){
-                    throw new NegativeAmount(flowers_amount);
-                }
-            } catch {System.out.println("Wrong amount format!!");}
-                catch (NegativeAmount e){
-                    System.out.println("Amount = >= 0!!");
-                }
+        System.out.println("Enter bouquet amount:");
+        Scanner scanner = new Scanner(System.in);
+        String amountInput = scanner.next();
+
+
+        try {
+            int flowers_amount = Integer.parseInt(amountInput);
+            System.out.println("Flowers amount " + flowers_amount);
+            if (flowers_amount < 0) {
+                throw new NegativeAmount(flowers_amount);
             }
+        } catch (NegativeAmount ex) {
+            System.out.println("Wrong amount format!!");
         }
+    }
+
+    class Flower {
+        String color;
+        String size;
+    }
+
+    class rose extends Flower {
+    }
+
+    class tulip extends Flower {
+    }
+
+    class chamomile extends Flower {
+    }
+
+    class rosebush extends Flower {
+    }
+
+    class aster extends Flower {
+    }
+
+    class bouquet {
+        rose Red = new rose();
+        tulip yellow = new tulip();
+        chamomile white = new chamomile();
+        rosebush rose = new rosebush();
+        aster violet = new aster();
     }
 }
 
