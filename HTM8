@@ -1,0 +1,25 @@
+public class HT8 {
+    public static void main(String[] args) {
+        Flower[] Flowerlist = new Flower[4];
+        Flowerlist[0] = new Flower("Rose", "Fine", 20);
+        Flowerlist[1] = new Flower("Tulip", "Beautiful", 10);
+        Flowerlist[2] = new Flower("Aster", "Good", 15);
+        Flowerlist[3] = new Flower("Rose Bush", "Bad", 40);
+        int[] intArray = new int[Flowerlist.length];
+        for (int i = 0; i < Flowerlist.length; i++) {
+            System.out.println(Flowerlist[i].name + " " + Flowerlist[i].smell + " " + Flowerlist[i].RadiusSize);
+        }
+    }
+
+    public static class Flower {
+        public String name = null;
+        public String smell = null;
+        public int RadiusSize = 0;
+
+        public Flower(String name, String smell, int RadiusSize) {
+            this.name = name;
+            this.smell = smell;
+            this.RadiusSize = RadiusSize;
+        }
+    }
+}
